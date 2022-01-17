@@ -10,7 +10,7 @@ public class ValidateArraySubsequence {
             if(seqIdx == sequence.size())
                 break;
 
-            if(sequence.get(idx) == array.get(idx))
+            if(sequence.get(idx).equals(array.get(idx)))
                 seqIdx++;
         }
         return seqIdx == sequence.size();
